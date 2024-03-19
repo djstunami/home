@@ -20,3 +20,13 @@ Run Installer:
 irm get.scoop.sh | iex
 ```
 
+To get info on a program installed by scoop:
+```
+scoop info <appname>
+```
+
+### Install all VS Code extensions
+```
+sed -n 's/^/--install-extension /p' wsl-vscode-extensions.txt | xargs code-insiders
+```
+

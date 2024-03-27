@@ -25,10 +25,27 @@ In order not to freak out Rapid7 install 7zip from https://www.7-zip.org/downloa
 scoop config use_external_7zip true
 ```
 
-To get info on a program installed by scoop:
+Install the Extras bucket (so we can install fonts for starship & lsd)
+```
+scoop bucket add extras
+```
+
+Install the fonts (requires local admin to approve)
+```
+scoop install extras/vcredist2022
+```
+
+
+To get info on a program available to scoop:
 ```
 scoop info <appname>
 ```
+
+To allow the winget program to run, run in PowerShell:
+```
+Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+```
+
 
 How to get all installed Scoops, and then how to load them:
 https://github.com/ScoopInstaller/Scoop/issues/2289

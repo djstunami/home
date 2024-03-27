@@ -20,6 +20,11 @@ Run Installer:
 irm get.scoop.sh | iex
 ```
 
+In order not to freak out Rapid7 install 7zip from https://www.7-zip.org/download.html , add C:\Program Files\7zip to your user environment variables, and then run the following command so scoop uses the external 7zip
+```
+scoop config use_external_7zip true
+```
+
 To get info on a program installed by scoop:
 ```
 scoop info <appname>

@@ -55,3 +55,8 @@ https://github.com/ScoopInstaller/Scoop/issues/2289
 sed -n 's/^/--install-extension /p' wsl-vscode-extensions.txt | xargs code-insiders
 ```
 
+## Install Tabby via winget
+```
+winget install -e --id Eugeny.Tabby
+```
+

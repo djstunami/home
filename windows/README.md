@@ -33,7 +33,10 @@ scoop bucket add extras
 Install the fonts (requires local admin to approve)
 ```
 scoop install extras/vcredist2022
+# After installing the fonts run uninstall to remove the installer
+scoop uninstall vcredist2022
 ```
+
 
 
 To get info on a program available to scoop:
